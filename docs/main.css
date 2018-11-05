@@ -7,7 +7,7 @@ body{margin: 0 auto;}
 a{text-decoration: none;}
 h1{font-family: 'Merriweather', serif;}
 p{font-family: 'Montserrat', sans-serif;}
-button{font-family: 'Montserrat', sans-serif;}
+button{font-family: 'Montserrat', sans-serif; cursor: pointer;}
 
 .hero{
     width: 100%;
@@ -34,6 +34,7 @@ nav>h3{display: inline-block;}
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .heroHeading{
@@ -56,8 +57,10 @@ nav>h3{display: inline-block;}
 }
 
 .flower{
+    position: relative;
     margin-top: -21%;
     text-align: center;
+    z-index: 100;
 }
 
 .NewRow{
@@ -79,8 +82,10 @@ nav>h3{display: inline-block;}
 }
 
 .NewRow>p{
+    position: relative;
     text-align: justify;
     padding-bottom: 30px;
+    z-index: -100;
 }
 
 .link{
@@ -89,6 +94,7 @@ nav>h3{display: inline-block;}
     font-weight: 400;
     font-style: italic;
     color: #C4C4C4;
+    cursor: pointer;
 }
 
 .shopBtn{
@@ -122,8 +128,89 @@ nav>h3{display: inline-block;}
     animation-direction: normal;
 }
 
+.fadeIn{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+.fadeInDown{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+.fadeInDown2{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-out;
+    animation-duration: 1.7s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+.fadeUp{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-timing-function: cubic-bezier(0, 1.01, 0.58, 1);
+    animation-duration: 5s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+.fadeUp2{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-timing-function: cubic-bezier(0, 1.01, 0.58, 1);
+    animation-duration: 5.8s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+.menuGroup{
+    width: 100%;
+    height: 1000px;
+    background: #F5F5F5;
+}
+
+.menuBtn{
+    display: block;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-bottom: 90px;
+    width: auto;
+    height: 50px;
+    font-family: 'Merriweather', serif;
+    font-size: 80px;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
 
 /* Animations */
+@-webkit-keyframes fadeIn {
+    from {
+        -webkit-transform: opacity(0%);
+        opacity: 0;
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: opacity(100%);
+        opacity: 100;
+    }
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+
+    to {opacity: 100;}
+}
+
 @-webkit-keyframes slideInUp {
     from {
         -webkit-transform: translate3d(0, 100%, 0);
@@ -149,3 +236,60 @@ nav>h3{display: inline-block;}
         transform: translate3d(0, 0, 0);
     }
 }
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+  
