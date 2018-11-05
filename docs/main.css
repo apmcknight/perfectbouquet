@@ -16,12 +16,14 @@ button{font-family: 'Montserrat', sans-serif; cursor: pointer;}
 }
 
 nav{
+    position: relative;
     padding-top: 3%;
     padding-bottom: 1%;
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
     height: 50px;
+    z-index: 10;
 }
 
 nav>h3{display: inline-block;}
@@ -35,8 +37,58 @@ nav>h3{display: inline-block;}
     font-weight: 700;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+/* Menu link animtions */
+.hoverRight {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hoverRight:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFA692;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hoverRight:hover,
+.hoverRight:focus,
+.hoverRight:active {
+    color: white;
+}
+
+.hoverRight:hover:before,
+.hoverRight:focus:before,
+.hoverRight:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* end */
 .heroHeading{
     margin-bottom: 4%;
     font-size: 50px;
@@ -177,18 +229,122 @@ nav>h3{display: inline-block;}
     background: #F5F5F5;
 }
 
+.flowerMenu{
+    position: absolute;
+    z-index: 1;
+}
+
+.flowerMenu>a>button{
+    margin-left: 47%;
+}
+
+.phone{margin-left: 832px; margin-bottom: 10px;}
+
+.flowerMenu>.phone>img{
+    width: 40px;
+    display: inline-block;
+}
+
+.flowerMenu>.phone>p{
+    position: relative;
+    left: 10px;
+    top: -6px;
+    display: inline-block;
+}
+
+.flowerMenu>img{
+    transform: rotate(-20deg);
+    margin-left: 640px;
+    margin-top: -100px;
+}
+
+.menuLinks{
+    position: relative;
+    top: -13%;
+    padding-top: 12%;
+    padding-left: 4%;
+    width: 50%;
+    height: 100%;
+    background: white;
+    z-index: 1;
+}
+
 .menuBtn{
     display: block;
     margin-top: 5%;
-    margin-left: 4%;
-    margin-bottom: 90px;
+    margin-bottom: 45px;
     width: auto;
-    height: 50px;
+    height: 100px;
+    text-align: left;
     font-family: 'Merriweather', serif;
     font-size: 80px;
     font-weight: bold;
-    background: none;
     border: none;
+    background: none;
+    transition: all .5s ease-in; 
+}
+
+.menuBtn:hover{
+    color: #000;  
+    padding-left: 30px;
+    transition: all 1s ease-out; 
+}
+
+.customerSupportBtn{
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: auto;
+    height: 100px;
+    text-align: right;
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    z-index: 20;
+}
+
+.subLink{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    transition: all .5s ease-out; 
+}
+
+.subLink:hover{
+    color: #FFA692;  
+    transition: all .5s ease-out; 
+}
+
+.subLinkI{
+    display: block;
+    width: auto;
+    height: auto;
+    padding-bottom: 5%;
+    color: rgb(163, 163, 163);
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    border: none;
+    background: none;
+    transition: all .5s ease-out; 
+}
+
+.subLinkI:hover{
+    color: #FFA692;  
+    text-decoration: underline;   
+    transition: all .5s ease-out; 
 }
 
 
