@@ -71,8 +71,8 @@ nav>h3{display: inline-block;}
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
 .hoverRight:hover,
@@ -88,6 +88,51 @@ nav>h3{display: inline-block;}
     transform: scaleX(1);
 }
 
+.hoverRight2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .9s;
+    transition-duration: .9s;
+}
+
+.hoverRight2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .9s;
+    transition-duration: .9s;
+    -webkit-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hoverRight2:hover,
+.hoverRight2:focus,
+.hoverRight2:active {
+    color: white;
+}
+
+.hoverRight2:hover:before,
+.hoverRight2:focus:before,
+.hoverRight2:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
 /* end */
 .heroHeading{
     margin-bottom: 4%;
@@ -140,6 +185,7 @@ nav>h3{display: inline-block;}
     z-index: -100;
 }
 
+
 .link{
     margin-right: 30px;
     font-family: 'Merriweather', serif;
@@ -147,6 +193,17 @@ nav>h3{display: inline-block;}
     font-style: italic;
     color: #C4C4C4;
     cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.link:hover{
+    margin-right: 30px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #20283C;
+    cursor: pointer;
+    transition: all 1s ease-out;
 }
 
 .shopBtn{
@@ -156,7 +213,11 @@ nav>h3{display: inline-block;}
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2.5px;
+    border: none;
 }
+
+.shopBtn:hover{color: #20283C;}
+
 
 .hiVector{
     margin-top: -22%;
@@ -222,6 +283,8 @@ nav>h3{display: inline-block;}
     animation-iteration-count: initial;
     animation-direction: normal;
 }
+
+#mainContent{overflow: hidden; height: 769px;}
 
 .menuGroup{
     width: 100%;
