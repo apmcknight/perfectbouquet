@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home – Perfect Bouquet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
 </head>
-<body>
-    <div id="mainContent">
-        <nav>
-            <h3>PerfectBouquet.</h3>
-            <a href="menu.html"><p>+&nbsp;MORE</p></a>
-            <h1 class="heroHeading">Make it a <br> perfect moment!</h1>
-            <p class="heroSubHeading">Shop our Custom, made-to-order Bouquets and make it a perfect moment today!</p>
-        </nav>
 
-        <div class="row flower">
-            <img src="../assets/flowerColors/flowersCombined.svg" alt="">
+<body>
+    <div class="animsition" id="mainContent">
+        <div class="hero slideIn">
+            <nav>
+                <h3>PerfectBouquet.</h3>
+                <a href="menu.html">
+                    <button class="menuLink">+&nbsp;MORE</button>
+                </a>
+            </nav>
+
+            <h1 class="heroHeading">Make it a <br> <span class="heroI">perfect</span> moment!</h1>
+            <p class="heroSubHeading">Shop our Custom, made-to-order Bouquets <br> and make it a perfect moment today!</p>
         </div>
 
+        <div class="flower">
+            <img src="../assets/flowerColors/flowersCombined.png" alt="">
+        </div>
+    </div>
+
+    <div class="NewRow">
+        <h1>New to PerfectBouquet?</h1>
+        <p>We make custom, made-to-order flowers from scratch. Yes! You saw that right, from scratch.
+            Our PerfectEngineers code and genetically alter the DNA of your perfect set of Flowers. Making them truly
+            unique!
+        </p>
+
+        <a class="link" href="about.html">learn more —</a>
+        <button class="shopBtn"><a href="shop.html"></a>Shop Now</button>
+    </div>
+
+    <div class="hiVector">
+        <img src="../assets/hiVector.svg" alt="Hi!">
     </div>
 
 
+    <div class="NewRow2">
+        <h1>Made <span class="perfect">Perfect</span> or Else!</h1>
+        <p>We stand by our product! That’s why if you find your PerfectBouquet dosen’t live up to your standards or
+            ours; We’ll give you a 100% refund. No stems attached!</p>
+        <a class="link" href="about.html">learn more —</a>
+        <button class="shopBtn"><a href="shop.html"></a>Shop Now</button>
+    </div>
+
+    <div class="NewRowVector">
+        <img src="../assets/hiVector.svg" alt="Flower Image">
+    </div>
+
+    <!-- remove these! -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- remove these! -->
+
+    <!-- Calls Page Transition Animation -->
+    <script src="app.js"></script>
+    <!-- --- end --- -->
 </body>
+
 </html>
