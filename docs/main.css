@@ -15,6 +15,12 @@ button{font-family: 'Montserrat', sans-serif; cursor: pointer;}
     background: #F5F5F5;
 }
 
+.hero2{
+    width: 100%;
+    height: auto;
+    background: #fff;;
+}
+
 nav{
     position: relative;
     padding-top: 3%;
@@ -408,6 +414,43 @@ nav>h3{display: inline-block;}
     color: #FFA692;  
     text-decoration: underline;   
     transition: all .5s ease-out; 
+}
+
+.grid-designer{
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.designerGroup{    
+    width: 70%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #F5F5F5;
+}
+
+.designerGroup2{    
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background: #fff;
+}
+
+.designerGroup2>img{
+    width: 95%;
+    height: auto;
+    position: relative;
+    left: -100px;
+    top: -190px;
 }
 
 

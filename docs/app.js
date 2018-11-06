@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $(".animsition").animsition({
-    inClass: 'fade-in-left-sm',
-    outClass: 'fade-out-left-sm',
+    inClass: 'fade-in-up-sm',
+    outClass: 'fade-in-down-sm',
     inDuration: 1500,
     outDuration: 800,
     linkElement: '.animsition-link',
