@@ -23,8 +23,8 @@ button{font-family: 'Montserrat', sans-serif; cursor: pointer;}
 
 nav{
     position: relative;
-    padding-top: 3%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
@@ -33,6 +33,8 @@ nav{
 }
 
 nav>h3{display: inline-block;}
+.mobile-close-btn{display: none;}
+
 
 .menuLink{
     margin-left: 70%;
@@ -45,6 +47,7 @@ nav>h3{display: inline-block;}
     cursor: pointer;
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 
 /* Menu link animtions */
 .hoverRight {
@@ -160,10 +163,13 @@ nav>h3{display: inline-block;}
 }
 
 .flower{
-    position: relative;
     margin-top: -21%;
-    text-align: center;
     z-index: 100;
+    max-width: 90%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .NewRow{
@@ -220,9 +226,32 @@ nav>h3{display: inline-block;}
     text-transform: uppercase;
     letter-spacing: 2.5px;
     border: none;
+    transition: all .5s linear;
 }
 
 .shopBtn:hover{color: #20283C;}
+
+.sizeBtn{
+    margin-top: 50px;
+    margin-right: 10px;
+    width: 150px;
+    height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    border: none;
+    transition: all .5s linear;
+    color: #20283C;
+    border: #20283C solid 3px;
+    background: none;
+    transition: all .5s linear;
+}
+
+.sizeBtn:hover {
+    color: #fff;
+    background: #20283C;
+    transition: all .5s linear;
+
+}
 
 
 .hiVector{
@@ -431,7 +460,7 @@ nav>h3{display: inline-block;}
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 70px;
-    padding-right: 70px;
+    padding-right: 90px;
     background: #F5F5F5;
 }
 
@@ -555,3 +584,63 @@ nav>h3{display: inline-block;}
     }
 }
   
+
+
+/* Media */
+@media screen and (min-width: 178px) and (max-width: 427px){
+    nav{
+        position: relative;
+        padding-top: 2%;
+        padding-bottom: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        height: 50px;
+        z-index: 10;
+    }
+
+    nav>.hide-desktop-btn{display: none;}
+
+    nav>.mobile-close-btn{display: block;}
+
+    nav>.mobile-close-btn>img{
+       position: absolute;
+       top: 20px;
+       left: 245px;
+        width: 20%;
+        height: 20%;
+        padding: 2px;
+    }
+
+    .grid-designer{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+        justify-items: auto;
+        align-items: stretch;
+    }
+
+    .designerGroup{    
+        width: 78%;
+        height: auto;
+        padding: 50px;
+        background: #F5F5F5;
+    }
+
+    .designerGroup2{    
+        width: 100%;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        background: #fff;
+    }
+    
+    .designerGroup2>img{
+        width: 100%;
+        height: auto;
+    }
+
+}
