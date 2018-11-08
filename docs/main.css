@@ -232,7 +232,6 @@ nav>h3{display: inline-block;}
 .shopBtn:hover{color: #20283C;}
 
 .sizeBtn{
-    margin-top: 50px;
     margin-right: 10px;
     width: 150px;
     height: 44px;
@@ -250,9 +249,32 @@ nav>h3{display: inline-block;}
     color: #fff;
     background: #20283C;
     transition: all .5s linear;
-
 }
 
+.sizeBtnClicked{
+    margin-right: 10px;
+    width: 150px;
+    height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    border: none;
+    transition: all .5s linear;
+    color: #fff;
+    border: #fff solid 3px;
+    background: green;
+}
+
+.sizeSelector{
+    margin-top: 100px;
+    color: #C4C4C4;
+    font-size: .8em;
+}
+
+.stepCounter{
+    color: #C4C4C4;
+    font-size: 1em;
+    letter-spacing: .2em;
+}
 
 .hiVector{
     margin-top: -22%;
@@ -481,6 +503,38 @@ nav>h3{display: inline-block;}
     left: -100px;
     top: -190px;
 }
+
+.btn3>button{
+    position: relative;
+    top: 130px;   
+    width: 639px;
+    height: 103px;
+    margin-left: -100px;
+    background: #20283C;
+    color: #F5F5F5;
+    font-size: 10px;
+    letter-spacing: .5em;
+    border: none;
+    transition: all .5s ease;
+}
+
+.btn3>button:hover{
+    background: #fff;
+    color: #20283C;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.29);
+    transition: all .5s ease;
+}
+
+.btn-font{
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: .3em;
+}
+
 
 
 /* Animations */
