@@ -732,6 +732,7 @@ nav>h3{display: inline-block;}
         grid-column-gap: 40px;
         grid-row-gap: 20px;
         justify-items: auto;
+        align-content: center;  
         align-items: stretch;
     }
 
@@ -739,7 +740,14 @@ nav>h3{display: inline-block;}
         width: 78%;
         height: auto;
         padding: 90px;
+        text-align: center;
         background: #F5F5F5;
+    }
+
+    .designerGroup > .p-container{
+        width:auto;
+        padding-left: 110px;
+        padding-right: 110px;
     }
 
     .designerGroup2{  
