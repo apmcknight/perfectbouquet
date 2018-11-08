@@ -302,7 +302,7 @@ nav>h3{display: inline-block;}
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-iteration-count: initial;
     animation-direction: normal;
 }
@@ -332,6 +332,15 @@ nav>h3{display: inline-block;}
     animation-direction: normal;
 }
 
+.fadeUpIndex{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-timing-function: cubic-bezier(0, 1.01, 0.58, 1);
+    animation-duration: 2.5s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
 .fadeUp2{
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
@@ -340,6 +349,53 @@ nav>h3{display: inline-block;}
     animation-iteration-count: initial;
     animation-direction: normal;
 }
+
+.fadeUpMenu{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-timing-function: cubic-bezier(0, 1.01, 0.58, 1);
+    animation-duration: 2.5s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+.fadeupitem-d1{    
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-timing-function: ease-out;
+    animation-duration: .5s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+.fadeupitem-d2{    
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+.fadeupitem-d3{    
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+.fadeupitem-d4{    
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
+
+
 
 #mainContent{overflow: hidden; height: 769px;}
 
@@ -552,7 +608,6 @@ nav>h3{display: inline-block;}
 }
 @keyframes fadeIn {
     from {opacity: 0;}
-
     to {opacity: 100;}
 }
 
