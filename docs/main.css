@@ -23,12 +23,14 @@ button{font-family: 'Montserrat', sans-serif; cursor: pointer;}
 
 nav{
     position: relative;
+    width: 90%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    width: 100%;
-    height: 50px;
     z-index: 10;
 }
 
@@ -37,14 +39,17 @@ nav>h3{display: inline-block;}
 
 
 .menuLink{
-    margin-left: 70%;
-    display: inline-block;
+    display: block;
+    width: auto;
+    height: 50px;
+    float: right;
     background: none;
     border: none;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
     cursor: pointer;
+    background: none;
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -457,13 +462,13 @@ nav>h3{display: inline-block;}
     font-weight: bold;
     border: none;
     background: none;
-    transition: all .5s ease-in; 
+    transition: all 1s ease; 
 }
 
 .menuBtn:hover{
     color: #000;  
     padding-left: 30px;
-    transition: all 1s ease-out; 
+    transition: all 1s ease; 
 }
 
 .customerSupportBtn{
@@ -698,29 +703,28 @@ nav>h3{display: inline-block;}
 /* Media */
 
 /* Designer - Tablets */
-@media screen and (min-width: 768px) and (max-width: 890px){
+@media screen and (min-width: 501px) and (max-width: 890px){
     #mainContent{overflow: hidden; height: auto;}
 
 
     nav{
-        position: relative;
-        padding-top: 2%;
-        padding-bottom: 20%;
-        padding-left: 5%;
-        padding-right: 5%;
         width: 100%;
         height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+        padding-bottom: 10%;
         z-index: 10;
     }
 
-    nav>.hide-desktop-btn{display: block;}
+    nav>.hide-desktop-btn{display: none;}
 
-    nav>.mobile-close-btn{display: none;}
+    nav>.mobile-close-btn{display: block;}
 
     nav>.mobile-close-btn>img {
         position: absolute;
-        top: 20px;
-        left: 245px;
+        top: 50px;
+        left: 590px;
         width: 20%;
         height: 20%;
         padding: 2px;
@@ -789,13 +793,109 @@ nav>h3{display: inline-block;}
         box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.29);
         transition: all .5s ease;
     }
+
+    /* --- menu --- */
+
+    .menuGroup{
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+    
+    .flowerMenu,    
+    .flowerMenu>a>button,    
+    .phone, 
+    .flowerMenu>.phone>img,
+    .flowerMenu>.phone>p,
+    .flowerMenu>img,
+    .customerSupportBtn{display: none;}
+
+    .menuLinks{
+        position: relative;
+        padding: 0;
+        padding-top: 50%;
+        margin-top: -29%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: white;
+        z-index: 1;
+    }
+    
+    .menuBtn{
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 45px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 80px;
+        font-weight: bold;
+        border: none;
+        background: none;
+        transition: all 1s ease; 
+    }
+    
+    .menuBtn:hover{
+        color: #000;  
+        padding-left: 30px;
+        transition: all 1s ease; 
+    }
+    
+    .subLink{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        background: none;
+        transition: all .5s ease-out; 
+    }
+    
+    .subLink:hover{
+        color: #FFA692;  
+        transition: all .5s ease-out; 
+    }
+    
+    .subLinkI{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: auto;
+        padding-bottom: 5%;
+        color: rgb(163, 163, 163);
+        text-align: center;
+        font-family: 'Merriweather', serif;
+        font-size: 15px;
+        font-weight: 600;
+        font-style: italic;
+        border: none;
+        background: none;
+        transition: all .5s ease-out; 
+    }
+    
+    .subLinkI:hover{
+        color: #FFA692;  
+        text-decoration: underline;   
+        transition: all .5s ease-out; 
+    }
+
+    /* -- end of menu */
+
 }
 
 /* --- end */
 
 
 /* Designer – Phones */
-@media screen and (min-width: 178px) and (max-width: 427px){
+@media screen and (min-width: 178px) and (max-width: 500px){
     nav{
         position: relative;
         padding-top: 2%;
