@@ -1,8 +1,14 @@
-// Need to figure out how to change class name on click, so a 
-// selection can be made between "small or large" 
+// Allows the size buttons to be 'slected'.
 
-function changeSelector(){
-    let sizeSlector = document.getElementsByClassName('sizeBtn').addEventListener('click', sizeBtnClicked);
+// Still need to fix bug where both selections are highlighted
+
+function buttonClicked() {
+    $('.sizeBtn').addClass('sizeBtnClicked').removeClass('.sizeBtn');
 }
 
-console.log(changeSelector);
+// DIDN'T WORK ! NEED FIXED...
+// if($('.sizeBtnClicked') == true){
+    //     $('.sizeBtnClicked').removeClass('.sizeBtn')
+    // }   else{
+    //     $('.sizeBtn').addClass('.sizeBtnClicked')
+    // }
