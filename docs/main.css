@@ -264,9 +264,9 @@ nav>h3{display: inline-block;}
     letter-spacing: 2.5px;
     border: none;
     transition: all .5s linear;
-    color: #fff;
-    border: #fff solid 3px;
-    background: green;
+    color: #20283C;
+    border-bottom: #000 solid 3px;
+    background: none;
 }
 
 .sizeSelector{
@@ -703,7 +703,7 @@ nav>h3{display: inline-block;}
 /* Media */
 
 /* Designer - Tablets */
-@media screen and (min-width: 501px) and (max-width: 890px){
+/* @media screen and (min-width: 501px) and (max-width: 890px){
     #mainContent{overflow: hidden; height: auto;}
 
 
@@ -795,7 +795,7 @@ nav>h3{display: inline-block;}
     }
 
     /* --- menu --- */
-
+/*
     .menuGroup{
         width: 100%;
         height: auto;
@@ -894,7 +894,7 @@ nav>h3{display: inline-block;}
 /* --- end */
 
 
-/* Designer – Phones */
+/* Designer – Phones
 @media screen and (min-width: 178px) and (max-width: 500px){
     nav{
         position: relative;
@@ -951,6 +951,4 @@ nav>h3{display: inline-block;}
         height: auto;
     }
 
-}
-
-/* --- end */
+} */

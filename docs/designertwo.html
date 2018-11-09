@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Step 2 – Designer – Perfect Bouquet</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Step 2 Designer – Perfect Bouquet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
+    </head>
 
 <body>
     <div id="mainContent">
@@ -35,8 +36,8 @@
                         
                         <div class="sizeSelector">
                             <p>SELECT A SCENT</p>
-                            <button class="sizeBtn" onClick="changeSelector()">SMALL</button>
-                            <button class="sizeBtn">LARGE</button>
+                            <button class="sizeBtn" data-selection-scent="blueberry" onClick="buttonClicked(this)">BLUEBERRYS</button>
+                            <button class="sizeBtn" data-selection-scent="apples" onClick="buttonClicked(this)">APPLES</button>
                             <script src="designerBtnClick.js"></script>
                         </div>
                        
