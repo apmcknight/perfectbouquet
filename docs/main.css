@@ -181,8 +181,8 @@ nav>h3{display: inline-block;}
     width: auto;
     height: auto;
     padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 60%;
+    padding-left: 5%;
+    padding-right: 65%;
     padding-bottom: 5%;
 }
 
@@ -197,9 +197,35 @@ nav>h3{display: inline-block;}
 
 .NewRow>p{
     position: relative;
-    text-align: justify;
+    text-align: left;
     padding-bottom: 30px;
     z-index: -100;
+}
+
+.rowDetails{
+    position: relative;
+    left: 50px;
+}
+
+.hiVector{
+    position: relative;
+    top: -200px;
+    left: 180%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.row-2-vector{
+    position: relative;
+    top: -250px;
+    margin-left: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.row-2-details{
+    position: relative;
+    left: 750px;
 }
 
 
@@ -279,20 +305,6 @@ nav>h3{display: inline-block;}
     color: #C4C4C4;
     font-size: 1em;
     letter-spacing: .2em;
-}
-
-.hiVector{
-    margin-top: -22%;
-    margin-left: 55%;
-    width: 20%;
-    height: 20%: 
-}
-
-.NewRowVector{
-    margin-top: -22%;
-    margin-left: 10%;
-    width: 20%;
-    height: 20%: 
 }
 
 .slideIn {
@@ -889,10 +901,9 @@ nav>h3{display: inline-block;}
 
     /* -- end of menu */
 
-}
+
 
 /* --- end */
-
 
 /* Designer – Phones
 @media screen and (min-width: 178px) and (max-width: 500px){
