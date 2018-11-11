@@ -10,9 +10,11 @@
     padding: 0px;
     padding-top: 50px;
     margin-left: auto;
+    margin-right: auto;
     margin-bottom: -50px;
     text-align: center;
   }
+
   .NewRow > h1 {
     font-size: 2em;
   }
