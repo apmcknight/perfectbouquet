@@ -180,6 +180,7 @@ nav>h3{display: inline-block;}
 .NewRow{
     width: auto;
     height: auto;
+    margin-bottom: -150px;
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 65%;
