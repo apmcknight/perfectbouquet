@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600,700');
 
-body{margin: 0 auto;}
+body{
+    margin: 0 auto;
+    overflow: hidden;
+}
 
 a{text-decoration: none;}
 h1{font-family: 'Merriweather', serif;}
