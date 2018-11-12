@@ -7,7 +7,14 @@ body{
     /* overflow: hidden; */
 }
 
-a{text-decoration: none;}
+a{
+    text-decoration: none;
+    color: #000;
+    transition: color .5s ease;
+}
+
+a:hover{color: #FFA692; transition: color .6s ease;}
+
 h1{font-family: 'Merriweather', serif;}
 p{font-family: 'Montserrat', sans-serif;}
 button{font-family: 'Montserrat', sans-serif; cursor: pointer;}
