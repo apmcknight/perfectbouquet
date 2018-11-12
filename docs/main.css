@@ -4,13 +4,15 @@
 
 body{
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 a{text-decoration: none;}
 h1{font-family: 'Merriweather', serif;}
 p{font-family: 'Montserrat', sans-serif;}
 button{font-family: 'Montserrat', sans-serif; cursor: pointer;}
+
+#notSupported{display: none;}
 
 .hero{
     width: 100%;
