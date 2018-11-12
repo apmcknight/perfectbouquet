@@ -59,6 +59,20 @@
   .row-2-vector > img {
     width: 300px;
   }
+
+  .flowerMenu {
+    display: none;
+    background: none;
+  }
+
+  .menuLinks {
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 40px;
+    background: #F5F5F5;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 425px) {
   #root {
