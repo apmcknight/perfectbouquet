@@ -629,6 +629,39 @@ nav>h3{display: inline-block;}
     letter-spacing: .3em;
 }
 
+.gdprAlert{
+    position: fixed;
+    top: 600px;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 130px -26px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 0px 130px -26px rgba(0, 0, 0, 0.64);
+    box-shadow: 0px 0px 130px -26px rgba(0, 0, 0, 0.64);
+
+}
+
+.gdprAlert > p{
+    display: inline-block;
+    margin-right: 3%;
+    text-align: left;
+    line-height: 1.6em;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.gdprAlert > button{margin-top: -15px;}
+.alertLink{
+    text-decoration: underline;
+    color: white;
+    font-weight: normal;
+}
+
 
 
 /* Animations */
