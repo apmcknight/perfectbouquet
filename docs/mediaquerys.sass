@@ -1,3 +1,18 @@
+// For Unsported Screen Sizes
+@media screen and (min-width: 50px) and (max-width: 318px)
+    #unsupported
+        dispaly: block // Renders the Error Message
+
+    #unsupported > h1
+        font-family: sans-serif
+        text-align: left
+        font-size: 110%
+        padding-top: 45%
+        margin: 12%
+
+    #root
+        display: none // Hides the root of the website
+
 // For Mobile Phones — Homepage
 @media screen and (min-width: 320px) and (max-width: 530px)
     #root
@@ -84,7 +99,7 @@
     #gdprWindow > .gdprAlert
         width: 80%
         position: fixed
-        top: 500px
+        top: 460px
         padding: 10%        
         margin: 0
         background: #C4C4C4
@@ -162,18 +177,12 @@
         height: 40px
         background: #F5F5F5
 
-
-
-// For Unsported Screen Sizes
-@media screen and (min-width: 50px) and (max-width: 318px)
-    #unsupported
-        dispaly: block // Renders the Error Message
-
-    #unsupported > h1
-        text-align: left
-        font-size: 150%
-        padding-top: 45%
-        margin: 10%
-
+// For Desktop — Hides Unsupported Alert Only
+@media screen and (min-width: 1000px) and (max-width: 4000px)
     #root
-        display: none // Hides the root of the website
+        overflow: hidden
+        overflow: -moz-hidden-unscrollable
+        overflow-x: hidden
+
+    #unsupported
+        display: none 
