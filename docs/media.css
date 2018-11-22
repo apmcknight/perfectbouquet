@@ -15,7 +15,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 530px) {
+@media screen and (min-width: 320px) and (max-width: 766px) {
   #root {
     overflow: hidden;
     overflow: -moz-hidden-unscrollable;
@@ -121,6 +121,36 @@
   .gdprAlert > p {
     text-align: center;
     margin-bottom: 15%;
+  }
+
+  .menuGroup {
+    width: 102%;
+  }
+
+  .flowerMenu {
+    display: none;
+  }
+
+  .menuLinks {
+    margin-top: 130px;
+  }
+
+  .menuBtn {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.3em;
+    text-align: center;
+  }
+
+  .smallLinks {
+    width: 80%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .subLinkI {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 531px) and (max-width: 998px) {
