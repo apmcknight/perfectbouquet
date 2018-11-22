@@ -187,6 +187,13 @@ nav>h3{display: inline-block;}
     text-align: center;
 }
 
+.heroImg{
+    width: .3%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .NewRow{
     width: auto;
     height: auto;
