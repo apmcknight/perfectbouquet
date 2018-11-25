@@ -212,6 +212,27 @@ nav>h3{display: inline-block;}
     padding-bottom: 5%;
 }
 
+.legalRow{
+    width: 45%;
+    height: auto;
+    margin-top: -350px;
+    margin-bottom: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4%;
+    text-align: justify;
+    line-height: 1.5em;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+}
+
+.legalRow > .rowDetails{left: 0;}
+.legalRow > .aboutDetails{margin-top: 0;}
+
+
+
 .NewRow2{
     width: auto;
     height: auto;
@@ -475,8 +496,9 @@ nav>h3{display: inline-block;}
 }
 
 
-
 #mainContent{overflow: hidden; height: 769px;}
+#height-override{height: auto;}
+
 
 .menuGroup{
     width: 100%;
@@ -703,6 +725,8 @@ nav>h3{display: inline-block;}
     color: white;
     font-weight: normal;
 }
+
+
 
 .creditContainer{
     width: 80%;
