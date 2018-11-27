@@ -111,7 +111,8 @@
   }
 
   #gdprWindow > .gdprAlert {
-    width: 30%;
+    width: auto;
+    height: 400px;
     position: fixed;
     padding: 10%;
     margin: 0;
