@@ -639,7 +639,7 @@ nav>h3{display: inline-block;}
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 70px;
-    padding-right: 90px;
+    padding-right: 23px;
     background: #F5F5F5;
 }
 
@@ -649,7 +649,7 @@ nav>h3{display: inline-block;}
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 70px;
-    padding-right: 70px;
+    padding-right: 0px;
     background: #fff;
 }
 
@@ -658,15 +658,15 @@ nav>h3{display: inline-block;}
     height: auto;
     position: relative;
     left: -100px;
-    top: -190px;
+    top: -100px;
 }
 
 .btn3>button{
     position: relative;
     top: 130px;   
-    width: 639px;
+    width: 600px;
     height: 103px;
-    left: -100px;
+    left: -80px;
     background: #20283C;
     color: #F5F5F5;
     font-size: 10px;
